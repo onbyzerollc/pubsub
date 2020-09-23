@@ -12,17 +12,17 @@ import (
 func (c *Client) Publish(ctx context.Context, topic string, msg interface{}, isJSON bool) error {
 	var b []byte
 	var err error
+	m := &Msg{}
 	if isJSON {
 		b, err = json.Marshal(msg)
+		err = json.Unmarshal(b, m)
 	} else {
 		b, err = proto.Marshal(msg.(proto.Message))
+		m.Data = b
 	}
-
 	if err != nil {
 		return err
 	}
-
-	m := &Msg{Data: b}
 
 	mw := chainPublisherMiddleware(c.Middleware...)
 	return mw(c.ServiceName, func(ctx context.Context, topic string, m *Msg) error {
