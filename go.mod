@@ -1,4 +1,4 @@
-module github.com/lileio/pubsub/v2
+module github.com/onbyzerollc/pubsub
 
 go 1.13
 

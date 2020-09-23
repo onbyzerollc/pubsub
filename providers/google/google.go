@@ -14,7 +14,7 @@ import (
 	"github.com/golang/protobuf/ptypes"
 	"github.com/jpillora/backoff"
 	"github.com/lileio/logr"
-	ps "github.com/lileio/pubsub/v2"
+	ps "github.com/onbyzerollc/pubsub"
 	"github.com/segmentio/ksuid"
 	"golang.org/x/sync/semaphore"
 	"google.golang.org/api/option"

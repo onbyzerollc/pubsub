@@ -6,7 +6,7 @@ import (
 	"time"
 
 	"github.com/dropbox/godropbox/errors"
-	"github.com/lileio/pubsub/v2"
+	"github.com/onbyzerollc/pubsub"
 	opentracing "github.com/opentracing/opentracing-go"
 	zipkintracing "github.com/openzipkin-contrib/zipkin-go-opentracing"
 	"github.com/sirupsen/logrus"

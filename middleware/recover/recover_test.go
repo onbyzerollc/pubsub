@@ -6,9 +6,9 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/lileio/pubsub/v2"
-	"github.com/lileio/pubsub/v2/providers/memory"
-	"github.com/lileio/pubsub/v2/test"
+	"github.com/onbyzerollc/pubsub"
+	"github.com/onbyzerollc/pubsub/providers/memory"
+	"github.com/onbyzerollc/pubsub/test"
 	"github.com/stretchr/testify/assert"
 )
 

@@ -9,8 +9,8 @@ import (
 
 	uuid "github.com/gofrs/uuid"
 	"github.com/golang/protobuf/proto"
-	"github.com/lileio/pubsub/v2"
-	"github.com/lileio/pubsub/v2/test"
+	"github.com/onbyzerollc/pubsub"
+	"github.com/onbyzerollc/pubsub/test"
 	"github.com/stretchr/testify/assert"
 )
 

@@ -4,7 +4,7 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/lileio/pubsub/v2"
+	"github.com/onbyzerollc/pubsub"
 )
 
 type MemoryProvider struct {
